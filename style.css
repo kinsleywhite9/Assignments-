@@ -25,23 +25,11 @@ table{
 tr{
   color: midnightblue;
 }
-ul.a{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav a{
+  text-decoration: none;
 }
 ol.b{
   list-style-position: inside;
-}
-ul.b{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}   
-ul.c{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 ul{
   color: midnightblue;
@@ -62,4 +50,32 @@ th{
 }
 ul:nth-child(even){
   background-color: rgb(173,216,230);
+}
+.column{
+  float: left;
+  padding: 10px;
+}
+.left{
+  width: 15%;
+}
+.middle{
+  width: 50%;
+}
+.right{
+  width: 35%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }

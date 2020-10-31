@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header> 
+    <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-blue-minimalistic-tech-computer-banner-poster-background-image_178087.jpg"> </header>
+    <nav>
+    <ul class="b">
+      <li> <a href="index.html">Home</a> </li>
+      <li> <a href="page1.html">Page 1</a> </li>
+      <li> <a href="page2.html">Page 2</a> </li>
+      <li> <a href="page3.html">Page 3</a> </li>
+      <li> <a href="https://www.columbusstate.edu/">CSU's Home Page</a> </li>
+    </ul>
+    </nav> 
+    <main>
+        <form name = "formTwo" method = "post" action = "https://webdevbasics.net/scripts/yoga.php" onsubmit="return formValidate()">
+        <fieldset>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id ="lastname" name="lastname" placeholder="lastname" size="40" maxlength="50" required> <br>
+        <label for="firstname">First Name:</label>
+        <input type="text" id ="firstname" name="firstname" placeholder="firstname" size="40" maxlength="50" required> <br>
+        <label for= "email">Email:</label> 
+        <input type="email" id= "email" name="email" placeholder="firstlast123@email.com" required> <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+        <label for="state">Select State:</label>
+        <select id="state" required> <br>
+          <option> Al </option>
+          <option> FL </option>
+          <option> GA </option>
+        </select> <br>
+        <label for="birthdate"> Date of Birth:</label>
+        <input type="date" id="birthdate" required><br>
+        <label for="username">Desired Username:</label>
+        <input type="text" id="username" placeholder="username" required> <br>
+        <label for="password"> Desired Password:</label>
+        <input type="password" id="password" placeholder="******" required> <br> 
+        <input type="submit" value="Submit">
+        </fieldset>
+        </form>
+        
+      </main>
+
+    <footer> <p> IT Specialist: Tech Inc. | 2021 | techinc@gmail.com | 706-483-2939 </p> </footer>  
+  </body>
+</html>
